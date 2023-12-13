@@ -5,7 +5,7 @@ const unixTime = url.searchParams.get('unixtime')
 const date = new Date(unixTime * 1000)
 
 const countDownHandle = () => {
-    const timeDiff = date.getTime() - new Date().getTime()
+    const timeDiff = Math.abs(date.getTime() - new Date().getTime())
 
     const hour = (Math.floor(timeDiff / 1000 / 60 / 60)).toString().padStart(2, '0')
     const min = (Math.floor(timeDiff / 1000 / 60) % 60).toString().padStart(2, '0')
