@@ -5,7 +5,7 @@ const unixTime = url.searchParams.get('unixtime')
 const date = new Date(unixTime * 1000)
 
 const countDownHandle = () => {
-    const timeDiff = date.getTime() - new Date().getTime()
+    const timeDiff = date.getTime() - Date.now()
 
     const hour = (Math.floor(timeDiff / 1000 / 60 / 60)).toString().padStart(2, '0')
     const min = (Math.floor(timeDiff / 1000 / 60) % 60).toString().padStart(2, '0')
@@ -21,9 +21,9 @@ const countDownHandle = () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    countDownHandle()
+    document.querySelector('.countdownTitle').textContent = countdownTitle
     setTimeout(() => {
-        document.querySelector('.countdownTitle').textContent = countdownTitle
         setInterval(countDownHandle, 1000);
-        countDownHandle()
     }, 1000 - new Date().getMilliseconds());
 })
