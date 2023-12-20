@@ -23,6 +23,7 @@
 
 .countdownMain {
     display: flex;
+    gap: 4px;
     flex-direction: row;
     flex-wrap: nowrap;
 }
@@ -34,7 +35,7 @@
 }
 
 .countdownDigitWrapper {
-    font-size: 48px;
+    font-size: 54px;
     background: #ebebeb;
     padding: 24px;
     border-radius: 8px;
