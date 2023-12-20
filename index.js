@@ -21,8 +21,8 @@ const countDownHandle = () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    countDownHandle()
     document.querySelector('.countdownTitle').textContent = countdownTitle
+    countDownHandle()
     setTimeout(() => {
         setInterval(countDownHandle, 1000);
     }, 1000 - new Date().getMilliseconds());
