@@ -12,8 +12,6 @@ const countDownHandle = () => {
     const timeDiff = Math.round((date.getTime() - Date.now()) / 1000)
     const timeDiffAbsolutize = Math.abs(timeDiff)
 
-    console.log(timeDiff)
-
     const hour = (Math.floor(timeDiffAbsolutize / 60 / 60)).toString().padStart(2, '0')
     const min = (Math.floor(timeDiffAbsolutize / 60) % 60).toString().padStart(2, '0')
     const sec = (Math.floor(timeDiffAbsolutize) % 60).toString().padStart(2, '0')
