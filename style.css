@@ -23,21 +23,24 @@
 
 .countdownMain {
     display: flex;
-    gap: 4px;
+    user-select: none;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 4px;
 }
 
 .countdownParts {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 8px;
 }
 
-.countdownDigitWrapper {
+.countdownDigitFrame {
+    height: 120px;
+    overflow: hidden;
     font-size: 54px;
     background: #ebebeb;
-    padding: 24px;
     border-radius: 8px;
 }
 
@@ -45,6 +48,20 @@
     font-size: 24px;
 }
 
-span.countdownSeparator {
+.countdownSeparator {
     font-size: 48px;
+}
+
+.countdownDigits {
+    display: flex;
+    gap: 8px;
+}
+
+.countdownNumberWrapper{
+    transition: translate 0.5s cubic-bezier(0.68, -0.55, 0.07, 1.11)
+}
+
+.countdownNumber {
+    height: 120px;
+    padding: 24px;
 }
