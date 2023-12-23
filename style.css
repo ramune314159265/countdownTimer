@@ -57,7 +57,7 @@
 }
 
 .countdownNumberWrapper{
-    transition: translate 0.2s;
+    transition: translate 0.5s cubic-bezier(0.68, -0.55, 0.07, 1.11)
 }
 
 .countdownNumber {
