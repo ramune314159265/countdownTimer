@@ -23,6 +23,7 @@
 
 .countdownMain {
     display: flex;
+    user-select: none;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: baseline;
