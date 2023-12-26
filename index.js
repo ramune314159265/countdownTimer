@@ -42,6 +42,6 @@ const countDownHandle = () => {
 document.addEventListener('DOMContentLoaded', () => {
     countDownHandle()
     setTimeout(() => {
-        setInterval(countDownHandle, 1000);
-    }, 1000 - new Date().getMilliseconds());
+        setInterval(countDownHandle, 1000)
+    }, 1000 - new Date().getMilliseconds())
 })
