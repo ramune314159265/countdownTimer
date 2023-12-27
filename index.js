@@ -6,10 +6,11 @@ const countdownTitles = {
     after: url.searchParams.get('titleafter'),
 }
 const unixTime = url.searchParams.get('unixtime')
+const offsetMilliSecond = (parseInt(url.searchParams.get('offset') ?? 0)) * 1000
 const date = new Date(unixTime * 1000)
 
 const countDownHandle = () => {
-    const timeDiff = Math.round((date.getTime() - Date.now()) / 1000)
+    const timeDiff = Math.round((date.getTime() - (Date.now() + offsetMilliSecond)) / 1000)
     const timeDiffAbsolutize = Math.abs(timeDiff)
 
     const hour = (Math.floor(timeDiffAbsolutize / 60 / 60)).toString().padStart(2, '0')
