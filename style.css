@@ -58,7 +58,47 @@
 }
 
 .countdownNumberWrapper {
-    transition: translate 0.5s cubic-bezier(0.68, -0.55, 0.07, 1.11)
+    transition: translate 0.5s cubic-bezier(0.68, -0.55, 0.07, 1.11);
+}
+
+.countdownNumberWrapper[data-number="0"] {
+    translate: 0px calc(-1080px + 120px * 0)
+}
+
+.countdownNumberWrapper[data-number="1"] {
+    translate: 0px calc(-1080px + 120px * 1)
+}
+
+.countdownNumberWrapper[data-number="2"] {
+    translate: 0px calc(-1080px + 120px * 2)
+}
+
+.countdownNumberWrapper[data-number="3"] {
+    translate: 0px calc(-1080px + 120px * 3)
+}
+
+.countdownNumberWrapper[data-number="4"] {
+    translate: 0px calc(-1080px + 120px * 4)
+}
+
+.countdownNumberWrapper[data-number="5"] {
+    translate: 0px calc(-1080px + 120px * 5)
+}
+
+.countdownNumberWrapper[data-number="6"] {
+    translate: 0px calc(-1080px + 120px * 6)
+}
+
+.countdownNumberWrapper[data-number="7"] {
+    translate: 0px calc(-1080px + 120px * 7)
+}
+
+.countdownNumberWrapper[data-number="8"] {
+    translate: 0px calc(-1080px + 120px * 8)
+}
+
+.countdownNumberWrapper[data-number="9"] {
+    translate: 0px calc(-1080px + 120px * 9)
 }
 
 .countdownNumber {

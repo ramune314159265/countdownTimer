@@ -17,12 +17,12 @@ const countDownHandle = () => {
     const min = (Math.floor(timeDiffAbsolutize / 60) % 60).toString().padStart(2, '0')
     const sec = (Math.floor(timeDiffAbsolutize) % 60).toString().padStart(2, '0')
 
-    document.querySelector('#countdownHours2 .countdownNumberWrapper').style.translate = `0px ${-1080 + 120 * hour[0]}px`
-    document.querySelector('#countdownHours1 .countdownNumberWrapper').style.translate = `0px ${-1080 + 120 * hour[1]}px`
-    document.querySelector('#countdownMinutes2 .countdownNumberWrapper').style.translate = `0px ${-1080 + 120 * min[0]}px`
-    document.querySelector('#countdownMinutes1 .countdownNumberWrapper').style.translate = `0px ${-1080 + 120 * min[1]}px`
-    document.querySelector('#countdownSeconds2 .countdownNumberWrapper').style.translate = `0px ${-1080 + 120 * sec[0]}px`
-    document.querySelector('#countdownSeconds1 .countdownNumberWrapper').style.translate = `0px ${-1080 + 120 * sec[1]}px`
+    document.querySelector('#countdownHours2 .countdownNumberWrapper').dataset.number = hour[0]
+    document.querySelector('#countdownHours1 .countdownNumberWrapper').dataset.number = hour[1]
+    document.querySelector('#countdownMinutes2 .countdownNumberWrapper').dataset.number = min[0]
+    document.querySelector('#countdownMinutes1 .countdownNumberWrapper').dataset.number = min[1]
+    document.querySelector('#countdownSeconds2 .countdownNumberWrapper').dataset.number = sec[0]
+    document.querySelector('#countdownSeconds1 .countdownNumberWrapper').dataset.number = sec[1]
 
     switch (true) {
         case (timeDiff > 0):
