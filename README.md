@@ -4,7 +4,7 @@
 
 インスタのカウントダウン風のタイマー(OBS用)
 
-デモ: <https://ramune314159265.github.io/countdownTimer/?titlebefore=カウントダウン中&titlethen=経過&titleafter=カウントダウン終了済み&unixtime=1735657200>
+デモ: <https://ramune314159265.github.io/countdownTimer/?titlebefore=カウントダウン中&titlethen=経過&titleafter=カウントダウン終了済み&unixtime=1767193200>
 
 ## 使い方
 
