@@ -4,7 +4,7 @@
 
 インスタのカウントダウン風のタイマー(OBS用)
 
-デモ: <https://ramune314159265.github.io/countdownTimer/?titlebefore=カウントダウン中&titlethen=経過&titleafter=カウントダウン終了済み&unixtime=1767193200>
+デモ: <https://ramune314159265.github.io/countdownTimer/?titlebefore=カウントダウン中&titlethen=経過&titleafter=カウントダウン終了済み&unixtime=1798729200>
 
 ## 使い方
 
@@ -25,3 +25,4 @@
 
 - 残り時間は2桁までしか表示できないので残り時間が100時間以上だと正常に表示できません
 - ~~カウントダウンの時間が過ぎたあとの処理とかがありません~~ (修正済み)
+
